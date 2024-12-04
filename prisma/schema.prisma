@@ -16,7 +16,7 @@ datasource db {
 model Player{
   Id Int @id @default(autoincrement())
   name  String
-  goolCount Int
+  goalCount Int
   birthDate DateTime 
   teamId Int
   team Team @relation(fields: [teamId], references: [Id])
